@@ -1,3 +1,3 @@
-output "bucket_id" {
-  value = google_storage_bucket.sample_bucket.id
+output "metric_name" {
+  value = var.metric_name
 }
