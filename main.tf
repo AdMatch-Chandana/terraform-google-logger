@@ -1,7 +1,6 @@
-resource "google_storage_bucket" "sample_bucket" {
-  name                        = var.bucket_name
-  location                    = var.location
-  force_destroy               = true
-  project                     = var.project
-  uniform_bucket_level_access = true
+resource "google_logging_metric" "logging_metric" {
+  project     = var.project
+  name        = var.metric_name
+  filter      = var.filter_query
+  description = var.description
 }
